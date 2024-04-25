@@ -15,12 +15,12 @@ dynamodb = boto3.resource('dynamodb')
 
 def lambda_handler(event, context):
     # Simulate bank failure 10% of the time
-    if random.random() < 0.1:
-        log_failure('Bank not available')
-        return {
-            "statusCode": 503,
-            "body": json.dumps({"message": "Bank not available"})
-        }
+    # if random.random() < 0.1:
+    #     log_failure('Bank not available')
+    #     return {
+    #         "statusCode": 503,
+    #         "body": json.dumps({"message": "Bank not available"})
+    #     }
         
     # Parse the incoming event body
     if 'body' in event and event['body'] is not None:
