@@ -6,6 +6,10 @@ from decimal import Decimal
 import hashlib
 import random
 
+
+
+#This is from vs code !!!!!!
+
 # Initialize a session using Amazon DynamoDB
 dynamodb = boto3.resource('dynamodb')
 
